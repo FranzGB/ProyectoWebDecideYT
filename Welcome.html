@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Decide YT - Bienvenido</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <script>
+        var UNAME;
+        window.onload = function(){
+            var UNAME = document.cookie 
+            document.getElementById('greet').textContent="Un placer tenerte "+UNAME;
+            
+        }
+
+        function validateForm() {
+            var form=document.getElementById("contacto");
+            for(i=0; i<form.childNodes.length; i++){
+                if(typeof form.childNodes[i].value=="undefined")
+                    continue;
+                else{
+                var x = form.childNodes[i].value;
+                if(x == null || x==""){
+                    alert("Porfavor rellene los campos antes de enviar");
+                    return false;
+                    }
+                }
+            }
+            return alert("Campos correctos");
+        }
+         
+
+        function deleteAllCookies() {
+            var cookies = document.cookie.split(";");
+
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i];
+                var eqPos = cookie.indexOf("=");
+                var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+                document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <header>       
+        <div class = "textos">
+            <div class="encima1"><br><br><br><br><br><br>
+            <h1 class="titulo"> Bienvenido a Decide YT</h1> <br><br>
+            <h3 class="subitulo">La plataforma democrática para la U</h3>
+            <br>
+            <img src="Images/despegableh.svg" alt="" class="desplegable"> 
+            <nav class="menu">
+                <a class="mn_asa" href="Asa.html"> Asambleas </a>
+                <a class="mn_ini" href="ini.html"> Iniciativas </a>
+                <a class="mn_contact" href="Welcome.html#contacto_d"> Contacto </a>    
+                <a class="mn_account" href="Home.html"> Cerrar Sesión </a>
+            </nav>
+            <p id='greet'>.</p>
+            </div>
+        </div>
+        <div class="sesgoabajo"></div>
+    </header>
+    <main>
+        <section class="acerca-de">
+            <div class="contenedor">
+                <h2 class="sobre-nosotros">Sobre nosotros</h2><br>
+                <h3 class="slogan">Tomando decisiones juntos</h3>
+                    <p class="parrafo">Bienvenidos a la plataforma de participación estudiantil Decide Yachay Tech. 
+                        Construyamos una comunidad abierta, transparente y colaborativa en cada proceso institucional.</p>
+            </div>
+       
+            <h3 class="slogan">Funciones en Decide YT</h3>
+            <div class="cards1">
+                <div class="card1">
+                    <img src="Images/foros.jpg" alt="">
+                    <h4 class="fun">Asambleas</h4>
+                    <p class="parrafo">Debate y comparte tus ideas para generar soluciones en foros online con los representantes.</p>                </div>
+                <div class="card1">
+                    <img src="Images/planes.jpg" alt="">
+                    <h4 class="fun">Iniciativas</h4>
+                    <p class= "parrafo">Analiza las propuestas recibidas y potencia una nueva forma de distribuir los recursos comunes.</p>
+                </div>
+            </div>
+        </section>
+        <br><br><br><br><br><br>
+        
+        <section class="galeria">
+            <div class="sesgoarriba"></div>
+            <div class="imagenes none">
+                <img src="Images/yachay_lab2.jpg" alt="">
+            </div>
+            <div class="imagenes">
+                <img src="Images/yachay_door.jpg" alt="">
+            </div>
+            <div class="imagenes">
+                <img src="Images/yachay_house.jpg" alt="">
+                <div class="encima">
+                    <h2>Decide Yachay Tech</h2>
+                    <div></div>
+                </div>
+            </div>
+            <div class="imagenes">
+                <img src="Images/yachay_lab.jpg" alt="">
+
+            </div>
+            <div class="imagenes none">
+                <img src="Images/yachay_mount.jpg" alt="">
+            </div>
+            <div class="sesgoabajo"></div>
+        </section>
+        <section class="miembros">
+            <div class="contenedor">
+                <h2 class="sobre-nosotros">Nuestro equipo</h2>
+                <h3 class="slogan">Conoce a nuestro equipo de trabajo</h3>
+                <div class="cards">
+                    <div class="card">
+                        <img src="Images/franz.jpg" alt="">
+                        <h4>Franz Guzmán</h4>
+                        <p>Estudiante de la carrera Ingeniería en Tecnologías de la Información de la Universidad Yachay Tech</p>
+                    </div>
+                    <div class="card">
+                        <img src="Images/gaby.jpg" alt="">
+                        <h4>Gabriela Obando</h4>
+                        <p>Estudiante de la carrera Ingeniería en Biomédica de la Universidad Yachay Tech</p>
+                    </div>
+                    <div class="card">
+                        <img src="Images/luis.jpg" alt="">
+                        <h4>Luis Murillo</h4>
+                        <p>Estudiante de la carrera Ingeniería en Tecnologías de la Información de la Universidad Yachay Tech</p>
+                    </div>
+                    <div class="card">
+                        <img src="Images/mela.jpg" alt="">
+                        <h4>Melany Aguilar</h4>
+                        <p>Estudiante de la carrera Ingeniería en Nanotecnología de la Universidad Yachay Tech</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fondo">
+            <div class="sesgoarriba"></div>
+            <div class="contenedor">
+                <h2 class="titulo-patrocinadores">Al servicio de la comunidad</h2>
+                <h3 class="subtitulo-patrocinadores">Integrate, colabora y decide</h3>
+                <h3 class="subtitulo-patrocinadores">Conoce un poco más de YT ... clickea las imágenes!</h3>
+                <div class="clientes">
+                    <div class="cliente">
+                        <img id="ga1" src="Images/danza.jpg" alt="">
+                    </div>
+                    <div class="cliente">
+                        <img id="ga2" src="Images/lab.jpg" alt="">
+                    </div>
+                    <div class="cliente">
+                        <img id="ga3" src="Images/sala.jpg" alt="">
+                    </div>
+                    <div class="cliente">
+                        <img id="ga4" src="Images/yachaypeople2.jpg" alt="">
+                    </div>
+                    <div class="cliente">
+                        <img id="ga5" src="Images/biblio.jpg" alt="">
+                    </div>
+                    <div class="cliente">
+                        <img id="ga6" src="Images/campus_gente.jpg" alt="">
+                    </div>
+                </div>
+
+                <article class="light-box1">
+                    <div class="historia1">
+                        <h1>Primera historia</h1><br>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ad obcaecati libero exercitationem reiciendis distinctio, consequatur quis alias nostrum deserunt nam velit unde fugit asperiores officiis quia quaerat cum eos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nemo minus soluta. Natus totam adipisci cupiditate rem, enim quaerat odio in necessitatibus voluptatibus impedit pariatur quo explicabo dolore, tempora delectus.</p>
+                        <a href="" class="close"><i class='bx bx-message-square-x'></i></a>
+                    </div>
+                </article>
+                <article class="light-box2">
+                    <div class="historia2">
+                        <h1>Segunda historia</h1><br>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ad obcaecati libero exercitationem reiciendis distinctio, consequatur quis alias nostrum deserunt nam velit unde fugit asperiores officiis quia quaerat cum eos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nemo minus soluta. Natus totam adipisci cupiditate rem, enim quaerat odio in necessitatibus voluptatibus impedit pariatur quo explicabo dolore, tempora delectus.</p>
+                        <a href="" class="close"><i class='bx bx-message-square-x'></i></a>
+                    </div>
+                </article>
+                <article class="light-box3">
+                    <div class="historia3">
+                        <h1>Tercera historia</h1><br>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ad obcaecati libero exercitationem reiciendis distinctio, consequatur quis alias nostrum deserunt nam velit unde fugit asperiores officiis quia quaerat cum eos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nemo minus soluta. Natus totam adipisci cupiditate rem, enim quaerat odio in necessitatibus voluptatibus impedit pariatur quo explicabo dolore, tempora delectus.</p>
+                        <a href="" class="close"><i class='bx bx-message-square-x'></i></a>
+                    </div>
+                </article>
+                <article class="light-box4">
+                    <div class="historia4">
+                        <h1>Cuarta historia</h1><br>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ad obcaecati libero exercitationem reiciendis distinctio, consequatur quis alias nostrum deserunt nam velit unde fugit asperiores officiis quia quaerat cum eos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nemo minus soluta. Natus totam adipisci cupiditate rem, enim quaerat odio in necessitatibus voluptatibus impedit pariatur quo explicabo dolore, tempora delectus.</p>
+                        <a href="" class="close"><i class='bx bx-message-square-x'></i></a>
+                    </div>
+                </article>
+                <article class="light-box5">
+                    <div class="historia5">
+                        <h1>Quinta historia</h1><br>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ad obcaecati libero exercitationem reiciendis distinctio, consequatur quis alias nostrum deserunt nam velit unde fugit asperiores officiis quia quaerat cum eos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nemo minus soluta. Natus totam adipisci cupiditate rem, enim quaerat odio in necessitatibus voluptatibus impedit pariatur quo explicabo dolore, tempora delectus.</p>
+                        <a href="" class="close"><i class='bx bx-message-square-x'></i></a>
+                    </div>
+                </article>
+                <article class="light-box6">
+                    <div class="historia6">
+                        <h1>Sexta historia</h1><br>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ad obcaecati libero exercitationem reiciendis distinctio, consequatur quis alias nostrum deserunt nam velit unde fugit asperiores officiis quia quaerat cum eos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nemo minus soluta. Natus totam adipisci cupiditate rem, enim quaerat odio in necessitatibus voluptatibus impedit pariatur quo explicabo dolore, tempora delectus.</p>
+                        <a href="" class="close"><i class='bx bx-message-square-x'></i></a>
+                    </div>
+                </article>
+
+                <h3 class="subtitulo-patrocinadores especial">Si gustas formar parte de este proyecto ... Contactanos!</h3>
+            </div>
+            
+        </section>
+        <footer>
+            <div id="contacto_d" class="contenedor">
+                 <h2 class="titulo-footer">Contactanos</h2>
+                <h3 class="subtitulo-footer">Lo apreciariamos mucho</h3>
+                <div class="footer">
+                    <form id="contacto" onsubmit="return validateForm()" action="enviar_contacto.php" method="POST" >
+                        <input type="text" name="name" id="" placeholder="Nombre">
+                        <input type="email" name="email" id="" placeholder="Email">
+                        <textarea name="msg" id="" cols="30" rows="10" placeholder="Ingrese su mensaje..."></textarea>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+            <div class="contenedor footer-content">
+                <div class="contact-us">
+                    <h2 class="brand">Decide YT</h2>
+                    <p class="mediap">Juntos por una comunidad participativa y responsable</p>
+                </div>
+                <div class="social-media">
+                    <a target="_blank" href="https://www.facebook.com/AEUYachayTech/" class="social-media-icon">
+                        <i class='bx bxl-facebook' ></i>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/UniYachayTech?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="social-media-icon">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/ciudadyachayec/?hl=es-la" class="social-media-icon">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        
+        
+        
+        
+    </main>
+
+    <script src="menu.js"> </script>
+    <script src="lightbox.js"> </script>
+
+</body>
+</html>

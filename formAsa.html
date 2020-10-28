@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario Asamblea</title>
+    <link rel="stylesheet" href="StyleformAsa.css">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <script src=asa_script.js></script>
+</head>
+<body>
+    <form onsubmit="return submitAsa()" method="POST" id="form">
+        <div class="form">
+            <h1>Formulario Asambleas</h1>
+            <br>
+            <div class="grupo">
+                <input type="text" name="" id="titulo" required><span class="barra"></span>
+                <label for="">Título</label>
+            </div>
+            <div class="grupo">
+                <input type="text" name="" id="lugar" required><span class="barra"></span>
+                <label for="">Lugar de la Asamblea</label>
+            </div>
+            <div class="grupo1">
+                <div><input type="time" name="" id="tim" required><span class="barra"></span>
+                    <label for="">Hora</label></div>
+                <div><input type="date" name="" id="date" required><span class="barra"></span>
+                    <label for="">Fecha</label></div> 
+            </div>        
+            
+            <div class="grupo">
+                <br><hr class="linea"><br>
+                <label class="des" for="">Descripción y Temas</label>
+                <textarea class="coments" name="msg" id="description" cols="30" rows="10" placeholder="..." required></textarea>
+            </div>
+            <button type="submit" id="bttn"  >Enviar</button>
+            <button type="reset" onclick=" window.open('Asa.html', '_self');">Cancelar</button>
+            <p class="warnings" id="warnings"></p>
+        </div>
+    </form>
+
+    
+    <script src="formAsa.js"></script>
+</body>
+</html>

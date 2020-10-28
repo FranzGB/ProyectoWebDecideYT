@@ -1,0 +1,142 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colorTextos:#ffffff;
+}
+
+body{
+    font-family: "Source Sans Pro", Helvetica, Roboto, Arial, sans-serif;;
+    background-image: url('Images/campus.jpg');
+    background-position: cover;
+    background-repeat: no-repeat;
+    height: 40%;
+    width:60%;
+    margin:auto;
+    margin-top: 10px;
+    position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align:center;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+form{
+    background: #312f2fb6;
+    padding: 40px 0;
+    border-radius: 10px;
+}
+
+.form{
+    width:100%;
+    margin:auto;
+}
+
+form.grupo{
+    position:absolute;
+    margin:45px;
+}
+
+input{
+    background: none;
+    color:#c6c6c6;
+    font-size: 17px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:50%;
+    border:none;
+    border-bottom: 1px solid var(--colorTextos);
+    margin: auto;
+}
+
+
+input:focus{
+    outline: none;
+    color:#ffffff;
+}
+
+textarea{
+    background: none;
+    color:#c6c6c6;
+    font-size: 20px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:100%;
+    border:none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+textarea:focus{
+    outline: none;
+    color:#c6c6c6;
+}
+
+label{
+    color: var(--colorTextos);
+    font-size:18px;
+    margin-left: 200px;
+    left:10px;
+    top:10px;
+    transition: 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+input:focus~label{
+    top:-14px;
+    font-size:16px;
+    color:#700505;
+}
+
+.linea{
+    width: 70%;
+    margin:auto;
+    border: 1px solid rgba(189, 16, 16, 0.801);
+    border-radius: 5px;
+}
+
+.coments{
+    margin:auto;
+    width:70%;
+    font-size: 15px;
+    height: 150px;
+}
+
+
+.grupo1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 60%;
+    position: center;
+    margin:auto;    
+}
+
+button{
+    font-family: "Source Sans Pro", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 20px;
+    background: #4568DC;
+    border: none;
+    display: block;
+    width: 30%;
+    margin:10px auto;
+    color:#ffffff;
+    border-radius: 5px;
+    height: auto;
+    cursor: pointer;
+}
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin:auto;
+    color:#ffffff;
+    padding-top: 20px;
+}

@@ -1,0 +1,24 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="estilo_login.css">
+      <meta name="viewport" http-equiv="Content-Type" content="width=device-width, initial-scale=1" charset="UTF-8" />
+      <title>Decide YT | Inicio de Sesión</title>
+      <script  type="text/javascript" src=login.js ></script>
+    </head>
+    
+    <body>
+      <div class="main" id="form">
+        <p class="sign"> Inicio de Sesión</p>
+        <form class="form1" id="inicio">
+          <input class="un"  type="text" align="center" placeholder="Usuario" id="uname" required><br>
+          <input class="pass" type="password" align="center" placeholder="Contraseña" id="pass" required>
+          <br><br>
+          <a class="submit" href="javascript:;" onclick="validateForm()" align="center">Iniciar Sesión</a>
+          <br>
+          <a class="register" align="center" href="Register.html">Registrarse</a>
+          <p class="warnings" id="warnings"></p>
+        </div>
+        <script src="avisoslogin.js"></script>  
+    </body>
+    
+</html>    

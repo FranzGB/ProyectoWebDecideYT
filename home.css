@@ -1,0 +1,46 @@
+body {
+    font-family: "Source Sans Pro", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    background-color:  #2d4f6b;
+    text-align: center;
+    vertical-align: bottom;
+}
+.Title{
+    
+    color: #FFF;
+    font-size: 65px;
+    position:center;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.Subtitle{
+    color: #FFF;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+    letter-spacing: 2px;
+    font-size: 42px;
+    text-transform: uppercase;
+}
+.Login{
+    display: inline-block;
+    padding: 6px;
+    width: 128px;
+    font-weight: 300;
+    border: 1px solid #FFF;
+    color:#FFF;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+    margin-top: 24px;
+  }
+  
+a{
+    text-decoration: none;
+}
+
+
+img{
+    width: 300px;
+    height: 300px;
+}
